@@ -1,8 +1,8 @@
 import React from 'react'
+import TextLoop from "react-text-loop";
 import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
+import { Container, Box, Grid, ThemeProvider, Typography } from '@material-ui/core';
 import mainImage from './assets/images/dl-main.jpg'
-import Typography from '@material-ui/core/Typography';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -14,11 +14,13 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: 'cover',
         position: 'relative',
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: "center",
         color: '#fff',
-        fontSize: "4rem"
-    }
+    },
+    decorateText: {
+        color: '#1fe628',
+        className: 'toto'
+    },
+
 }));
 
 const Hero = () => {
@@ -27,22 +29,33 @@ const Hero = () => {
 
     return (
         <>
-            <Box className={classes.hero}>
-                
-                <Typography variant="h6" component="h2" gutterBottom>
-                    WELCOME
-                </Typography>
-                <Typography variant="h4" gutterBottom>
-                    <h1>Hi, I'm Kyle Ferry</h1>
-                </Typography>
-                <Typography variant="h4" gutterBottom>
-                    <h1>Full Stack Developer</h1>
-                </Typography>
-                <Typography variant="h4" gutterBottom>
-                    <h1>Based in London</h1>
-                </Typography>
+            <div className={classes.hero}>
+                <Grid
+                    container
+                    direction="column"
+                    justify="center"
+                    alignItems="center"
+                >
+                    <Container>
 
-            </Box>
+                        <Typography variant="h6" component="h6" gutterBottom> WELCOME </Typography>
+
+                        <Typography variant="h1" >Hi, I'm Kyle Ferry</Typography>
+
+                        <Typography variant="h3">
+                            <TextLoop>
+                                <span className={classes.decorateText}> Front End Developer </span>
+                                <span className={classes.decorateText}> based in London. </span>
+                            </TextLoop>
+                        </Typography>
+
+                        
+
+
+                    </Container>
+                </Grid>
+
+            </div>
         </>
     )
 }
