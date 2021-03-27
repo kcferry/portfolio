@@ -1,7 +1,7 @@
 import React from 'react'
 import TextLoop from "react-text-loop";
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Box, Grid, ThemeProvider, Typography } from '@material-ui/core';
+import { Container, Box, Grid, Typography } from '@material-ui/core';
 import mainImage from './assets/images/dl-main.jpg'
 
 
@@ -29,7 +29,7 @@ const Hero = () => {
 
     return (
         <>
-            <div className={classes.hero}>
+            <Box className={classes.hero}>
                 <Grid
                     container
                     direction="column"
@@ -55,7 +55,7 @@ const Hero = () => {
                     </Container>
                 </Grid>
 
-            </div>
+            </Box>
         </>
     )
 }

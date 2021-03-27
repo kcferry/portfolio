@@ -1,4 +1,11 @@
+
+
 * {
   margin: 0;
+}
+
+.About-Img {
+  max-width: 225px;
+  max-height: 2225px;
 }
 

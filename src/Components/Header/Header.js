@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, Drawer, MenuItem, Link } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Drawer, MenuItem, Link, } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 
 import logo from '../../assets/images/kf_logo.png'
@@ -33,7 +33,7 @@ const headerTabs = [
 
 // Styles // 
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   appBar: {
     backgroundColor: '#000000'
   },
@@ -66,9 +66,8 @@ const useStyles = makeStyles((theme) => ({
   },
   logoDrawer: {
     display: 'flex',
-    padding: theme.spacing(0, 1),
     // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
+
     justifyContent: 'center',
   },
   drawerItem: {
@@ -223,7 +222,7 @@ const Header = () => {
   return (
     <>
       <AppBar className={classes.appBar} position="static" >
-        {mobileView ? displayMobile() : displayDesktop()}
+          {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
     </>
   )
