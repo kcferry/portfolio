@@ -2,6 +2,7 @@ import './App.css';
 import Hero from './Hero'
 import About from './Components/AboutMe/About'
 import Layout from './Components/Layout';
+import Projects from './Components/Projects/Projects'
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
@@ -34,6 +35,8 @@ function App() {
           <Hero></Hero>
 
           <About></About>
+
+          <Projects />
 
         </Layout>
 

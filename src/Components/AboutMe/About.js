@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         padding: theme.spacing(4),
     },
+    container: {
+        paddingTop: 100
+    }
 }));
 
 
@@ -21,7 +24,8 @@ const About = () => {
 
 
     return (
-        <Container>
+        <Box >
+        <Container className={classes.container} >
 
             <Typography variant="h1" align="center" color='textPrimary' gutterBottom >
                 About Me
@@ -48,15 +52,16 @@ const About = () => {
                     </Grid>
 
 
-                    <Grid container justify="center" item xs={11} sm={12} direction="row">
-                        <Typography variant="h5" align="left" color='textPrimary' gutterBottom >
+                    <Grid container justify="center" item xs={11} sm={12} direction='column'>
+
+                        <Typography variant="h4" align="left" color='textPrimary' gutterBottom >
                             Skills
                         </Typography>
 
                         <Grid container justify="center" item xs={11} sm={12} direction="row">
 
-                            <Grid container  item xs={12} md={6}>
-                                <Box >
+                            <Grid container item md={5}>
+                                <Grid item>
                                     <ListItem>
                                         <ListItemText> HTML5 & CSS3 </ListItemText>
                                     </ListItem>
@@ -73,11 +78,11 @@ const About = () => {
                                         <ListItemText> Node.JS & Express</ListItemText>
                                     </ListItem>
                                     <Divider light />
-                                </Box>
+                                </Grid>
                             </Grid>
 
-                            <Grid container item xs={12} md={6}>
-                                <Box>
+                            <Grid container item md={5}>
+                                <Grid item>
                                     <ListItem>
                                         <ListItemText> Material Ui</ListItemText>
                                     </ListItem>
@@ -90,22 +95,20 @@ const About = () => {
                                         <ListItemText> Firebase</ListItemText>
                                     </ListItem>
                                     <Divider light />
-                                </Box>
+                                </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
 
-                <Grid container justify="center" item xs={10} sm={6}>
+                <Grid container justify="center" xs={10} sm={6}>
                     <img className='About-Img' src={animoji} alt='Kyle Amoji' align='center' />
                 </Grid>
 
             </Grid>
 
-
-
-
         </Container >
+        </Box>
 
     )
 }
