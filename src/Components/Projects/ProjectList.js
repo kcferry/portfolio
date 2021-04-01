@@ -22,7 +22,7 @@ const portContent = [
         github: 'https://github.com/kcferry/react-expense-app',
     },
     {
-        image: recipePic ,
+        image: recipePic,
         title: 'Recipe Book',
         description: 'The Recipe Book is an app written in vanilla Javascript to store your recipes. Features include adding recipe steps with a separate ingredient list and filtering recipes by most recent, last edited and alphabetically.',
         livesite: 'https://adoring-yalow-21e8e7.netlify.app/index.html',
@@ -54,10 +54,10 @@ const useStyles = makeStyles({
 
 const ProjectList = () => {
     const classes = useStyles();
-    
+
 
     return (
-        
+
         <>
             {portContent.map((project, index) => (
                 <>
@@ -80,7 +80,7 @@ const ProjectList = () => {
                             </CardActionArea>
                             <CardActions>
                                 <Button size="small" color="primary" href={project.livesite}>
-                                    Live Site
+                                    Launch Site
                   </Button>
                                 <Button size="small" color="primary" href={project.github}>
                                     GitHub

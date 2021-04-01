@@ -29,7 +29,7 @@ const Hero = () => {
 
     return (
         <>
-            <Box className={classes.hero}>
+            <Box fontWeight="fontWeightBold" className={classes.hero}>
                 <Grid
                     container
                     direction="column"
@@ -38,18 +38,26 @@ const Hero = () => {
                 >
                     <Container>
 
-                        <Typography variant="h6" component="h6" gutterBottom> WELCOME </Typography>
+                        <Typography variant="h6" component="h6" gutterBottom>
+                            <Box fontWeight="fontWeightLight">
+                                WELCOME
+                            </Box>
+                        </Typography>
 
-                        <Typography variant="h1" >Hi, I'm Kyle Ferry</Typography>
+                        <Typography variant="h1" >
+                            <Box fontWeight="fontWeightMedium">
+                                Hi, I'm Kyle Ferry
+                            </Box>
+                        </Typography>
 
                         <Typography variant="h3">
                             <TextLoop>
-                                <span className={classes.decorateText}> Front End Developer </span>
-                                <span className={classes.decorateText}> based in London. </span>
+                                <Box fontWeight="fontWeightMedium" className={classes.decorateText}> Front End Developer </Box>
+                                <Box fontWeight="fontWeightMedium" className={classes.decorateText}> Based in London. </Box>
                             </TextLoop>
                         </Typography>
 
-                        
+
 
 
                     </Container>

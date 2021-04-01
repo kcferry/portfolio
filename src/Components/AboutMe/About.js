@@ -13,7 +13,11 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(4),
     },
     container: {
-        paddingTop: 100
+        padding: 60
+    },
+    boxBackground: {
+        background: '#111',
+        width: '100%'
     }
 }));
 
@@ -22,92 +26,95 @@ const useStyles = makeStyles((theme) => ({
 const About = () => {
     const classes = useStyles();
 
-
     return (
-        <Box >
-        <Container className={classes.container} >
+        <Box className={classes.boxBackground}>
+            <Container className={classes.container} >
 
-            <Typography variant="h1" align="center" color='textPrimary' gutterBottom >
-                About Me
-            </Typography>
+                <Typography variant="h1" align="center" color='textSecondary' gutterBottom >
+                    <Box fontWeight="fontWeightMedium">
+                        About Me
+                    </Box>
+                </Typography>
 
 
-            <Grid container spacing={6} justify='space-around' alignItems='center'>
+                <Grid container spacing={6} justify='space-around' alignItems='center'>
 
+                    <Grid container item xs={10} sm={6} spacing={5} justify='space-around' alignItems='center'>
 
-                <Grid container item xs={10} sm={6} spacing={5} justify='space-around' alignItems='center'>
-
-                    <Grid container justify="center" item xs={11} sm={12}>
-                        <Paper elevation={6} spacing={3} className={classes.paper} >
-                            <Typography alignItems='center' color='textPrimary'>
-                                I'm kyle, an ambitious self-taught full stack developer from Ireland.
+                        <Grid item justify="center" item xs={11} sm={12}>
+                            <Typography variant="h5" align='center' color='textSecondary'>
+                                Hello! I'm kyle, an ambitious self-taught full stack developer from Ireland.
                                 I started my journey into web development as I found myself more
                                 often than not in my years working in sound and audio
                                 intrigued by technology and questioning what made it tick.
                                 That intrigue has become a passion to learn,
                                 understand and develop to the best of my ability.
-                        </Typography>
-                        </Paper>
-
-                    </Grid>
+                            </Typography>
+                        </Grid>
 
 
-                    <Grid container justify="center" item xs={11} sm={12} direction='column'>
+                        <Grid container justify="center" item xs={11} sm={12} direction='column'>
 
-                        <Typography variant="h4" align="left" color='textPrimary' gutterBottom >
-                            Skills
-                        </Typography>
+                            <Typography variant="h4" align="left" color='textSecondary' gutterBottom >
+                                <Box fontWeight="fontWeightMedium">
+                                    Skills
+                                </Box>
+                            </Typography>
 
-                        <Grid container justify="center" item xs={11} sm={12} direction="row">
+                            <Grid container justify="center" item xs={11} sm={12} direction="row">
 
-                            <Grid container item md={5}>
-                                <Grid item>
-                                    <ListItem>
-                                        <ListItemText> HTML5 & CSS3 </ListItemText>
-                                    </ListItem>
-                                    <Divider light />
-                                    <ListItem>
-                                        <ListItemText> JavaScript</ListItemText>
-                                    </ListItem>
-                                    <Divider light />
-                                    <ListItem>
-                                        <ListItemText> React</ListItemText>
-                                    </ListItem>
-                                    <Divider light />
-                                    <ListItem>
-                                        <ListItemText> Node.JS & Express</ListItemText>
-                                    </ListItem>
-                                    <Divider light />
+                                <Grid container item md={5}>
+                                    <Grid item >
+                                        <ListItem >
+                                            <ListItemText>JavaScript (ES6+)</ListItemText>
+                                        </ListItem>
+                                        <Divider light />
+                                        <ListItem>
+                                            <ListItemText>React</ListItemText>
+                                        </ListItem>
+                                        <Divider light />
+                                        <ListItem>
+                                            <ListItemText>Node.JS</ListItemText>
+                                        </ListItem>
+                                        <Divider light />
+                                        <ListItem>
+                                            <ListItemText>Git & GitHub</ListItemText>
+                                        </ListItem>
+                                        <Divider light />
+                                    </Grid>
                                 </Grid>
-                            </Grid>
 
-                            <Grid container item md={5}>
-                                <Grid item>
-                                    <ListItem>
-                                        <ListItemText> Material Ui</ListItemText>
-                                    </ListItem>
-                                    <Divider light />
-                                    <ListItem>
-                                        <ListItemText> Git & GitHub</ListItemText>
-                                    </ListItem>
-                                    <Divider light />
-                                    <ListItem>
-                                        <ListItemText> Firebase</ListItemText>
-                                    </ListItem>
-                                    <Divider light />
+                                <Grid container item md={5}>
+                                    <Grid item>
+                                        <ListItem>
+                                            <ListItemText>HTML5 & (S)CSS</ListItemText>
+                                        </ListItem>
+                                        <Divider light />
+                                        <ListItem>
+                                            <ListItemText>Material Ui</ListItemText>
+                                        </ListItem>
+                                        <Divider light />
+                                        <ListItem>
+                                            <ListItemText>Express</ListItemText>
+                                        </ListItem>
+                                        <Divider light />
+                                        <ListItem>
+                                            <ListItemText>Firebase</ListItemText>
+                                        </ListItem>
+                                        <Divider light />
+                                    </Grid>
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
+
+                    <Grid container justify="center" xs={10} sm={6}>
+                        <img className='About-Img' src={animoji} alt='Kyle Amoji' align='center' />
+                    </Grid>
+
                 </Grid>
 
-                <Grid container justify="center" xs={10} sm={6}>
-                    <img className='About-Img' src={animoji} alt='Kyle Amoji' align='center' />
-                </Grid>
-
-            </Grid>
-
-        </Container >
+            </Container >
         </Box>
 
     )

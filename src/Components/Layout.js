@@ -5,8 +5,7 @@ import Header from './Header/Header'
 
 const useStyles = makeStyles({
     page: {
-
-        width: '100%'
+        width: '100%',
     }
 })
 
