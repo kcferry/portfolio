@@ -53,7 +53,7 @@ const ContactMe = () => {
                     <Grid item md={6}>
                         <Grid container justify="space-between" alignItems="center" direction="column">
                             <Grid item md={12}>
-                                <Typography variant="h1" color='textSecondary' gutterBottom >
+                                <Typography variant="h3" color='textSecondary' gutterBottom >
                                     <Box fontWeight="fontWeightMedium">
                                         Contact Me
                                     </Box>
