@@ -8,7 +8,7 @@ import mainImage from './assets/images/dl-main.jpg'
 const useStyles = makeStyles((theme) => ({
     hero: {
         backgroundImage: `url(${mainImage})`,
-        height: 'calc(100vh - 32px)',
+        height: '100vh',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-reapeat',
         backgroundSize: 'cover',

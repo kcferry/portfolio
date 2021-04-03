@@ -234,7 +234,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar className={classes.appBar} position="static" >
+      <AppBar className={classes.appBar} position="fixed" >
           {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
     </>
