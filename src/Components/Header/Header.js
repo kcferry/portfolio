@@ -88,6 +88,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
 
+  const classes = useStyles();
+
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false
@@ -106,7 +108,6 @@ const Header = () => {
   }, [])
 
 
-  const classes = useStyles();
 
   const kfLogo = (
     <Button>
@@ -122,6 +123,8 @@ const Header = () => {
     </div>
   )
 
+
+  
   const displayDesktop = () => {
     return <Toolbar className={classes.Toolbar}>
       <div>
@@ -137,6 +140,25 @@ const Header = () => {
       setState((prevState) => ({ ...prevState, drawerOpen: true }))
     const handleDrawerClose = () =>
       setState((prevState) => ({ ...prevState, drawerOpen: false }));
+
+      const getDrawerChoices = () => {
+        return headerTabs.map(({ label, href }) => {
+          return (
+            <Link 
+              {...{
+                to: href,
+                color: "inherit",
+                style: { textDecoration: "none" },
+                key: label,
+                className: classes.drawerItem,
+                onClick: handleDrawerClose
+              }}
+            >
+              <MenuItem>{label}</MenuItem>
+            </Link>
+          );
+        });
+      };
 
     return (
       <Toolbar>
@@ -171,6 +193,7 @@ const Header = () => {
 
       </Toolbar>
     )
+
   }
 
 
@@ -191,23 +214,7 @@ const Header = () => {
     })
   }
 
-  const getDrawerChoices = () => {
-    return headerTabs.map(({ label, href }) => {
-      return (
-        <Link
-          {...{
-            to: href,
-            color: "inherit",
-            style: { textDecoration: "none" },
-            key: label,
-            className: classes.drawerItem
-          }}
-        >
-          <MenuItem>{label}</MenuItem>
-        </Link>
-      );
-    });
-  };
+  
 
   const socialLinks = (
     <div>

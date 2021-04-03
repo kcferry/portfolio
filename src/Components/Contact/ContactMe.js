@@ -46,51 +46,51 @@ const ContactMe = () => {
 
     return (
         <div id='contactme'>
-            <Box className={classes.boxBackground}>
-                <Container className={classes.container} >
+        <Box className={classes.boxBackground}>
+            <Container className={classes.container} >
 
-                    <Grid container justify="center" alignItems="center">
+                <Grid container justify="center" alignItems="center">
 
-                        <Grid item md={6}>
-                            <Grid container justify="space-between" alignItems="center" direction="column">
-                                <Grid item md={12}>
-                                    <Typography variant="h3" color='textSecondary' gutterBottom >
-                                        <Box fontWeight="fontWeightMedium">
-                                            Contact Me
+                    <Grid item md={6}>
+                        <Grid container justify="space-between" alignItems="center" direction="column">
+                            <Grid item md={12}>
+                                <Typography variant="h3" color='textSecondary' gutterBottom >
+                                    <Box fontWeight="fontWeightMedium">
+                                        Contact Me
                                     </Box>
-                                    </Typography>
-                                </Grid>
+                                </Typography>
+                            </Grid>
 
-                                <Grid item sm={6} md={12}>
-                                    <Typography color='textSecondary'>
-                                        Feel free to reach out if you're looking for a developer, have a question, or just want to connect.. Connect with me via phone:
+                            <Grid item sm={6} md={12}>
+                                <Typography color='textSecondary'>
+                                    Feel free to reach out if you're looking for a developer, have a question, or just want to connect.. Connect with me via phone:
                                     <a href="tel:+8801923088574">075 7563 3363</a>
                                     or email:
                                     <a href="mailto:kyleferry@icloud.com"> kyleferry@icloud.com</a>
-                                    </Typography>
-                                </Grid>
-
-                                <Grid item md={12}>
-                                    <div className={classes.drawerContainer}>{socialLinks}</div>
-                                </Grid>
-
+                                </Typography>
                             </Grid>
-                        </Grid>
 
-
-                        <Grid item md={6}>
-                            <Grid container justify="center" alignItems="center" md={12}>
-                                <Grid item>
-                                    <img className='About-Img' src={mepic} alt='Kyle Amoji' align='center' />
-                                </Grid>
+                            <Grid item md={12}>
+                                <div className={classes.drawerContainer}>{socialLinks}</div>
                             </Grid>
+
                         </Grid>
-
-
                     </Grid>
 
-                </Container >
-            </Box>
+
+                    <Grid item md={6}>
+                        <Grid container justify="center" alignItems="center" md={12}>
+                            <Grid item>
+                                <img className='About-Img' src={mepic} alt='Kyle Amoji' align='center' />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+
+                </Grid>
+
+            </Container >
+        </Box>
         </div>
     )
 }
