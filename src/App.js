@@ -4,26 +4,43 @@ import About from './Components/AboutMe/About'
 import Layout from './Components/Layout';
 import Projects from './Components/Projects/Projects'
 import ContactMe from './Components/Contact/ContactMe'
-
-
-
+import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom'
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
+const routes = [
+  {
+    path: '/home',
+    comp: Hero
+  },
+  {
+    path: '/about',
+    comp: About
+  },
+  {
+    path: '/projects',
+    comp: Projects
+  },
+  {
+    path: '/contactme',
+    comp: ContactMe
+  },
+]
+
 const theme = createMuiTheme({
   palette: {
-      primary: {
-          main: '#666',
-      },
-      secondary: {
-          main: 'rgb(124, 120, 120)',
-      },
-      text: {
-          secondary: '#fff'
-      }
+    primary: {
+      main: '#666',
+    },
+    secondary: {
+      main: 'rgb(124, 120, 120)',
+    },
+    text: {
+      secondary: '#fff'
+    }
   },
   background: {
-      deafult: '#fff'
+    deafult: '#fff'
   },
   typography: {
     fontFamily: [
@@ -34,19 +51,21 @@ const theme = createMuiTheme({
 
 
 function App() {
-  
+
   return (
     <ThemeProvider theme={theme}>
 
-      <div className="App">
-        <Layout>
-          <Hero></Hero>
-          <About></About>
-          <Projects />
-          <ContactMe />
-        </Layout>
-      </div>
+      
 
+        <Layout>
+         <Hero/>
+         <About/>
+         <Projects/>
+         <ContactMe/>  
+        </Layout>
+
+
+     
 
     </ThemeProvider>
   );

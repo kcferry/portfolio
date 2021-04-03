@@ -8,3 +8,18 @@
   max-height: 3225px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.link-header {
+  color: white;
+
+  &:hover{
+    color: #1fe628;
+    transition-timing-function: ease-in;
+    transition: 0.4s;
+    transform: translateY(10%);
+  }
+}
+

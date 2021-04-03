@@ -30,6 +30,7 @@ const About = () => {
 
 
     return (
+        <div id='about'>
         <Box className={classes.boxBackground}>
             <Container className={classes.container} >
 
@@ -123,6 +124,7 @@ const About = () => {
 
             </Container >
         </Box>
+        </div>
     )
 }
 

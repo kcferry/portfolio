@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, Drawer, MenuItem, Link, } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Drawer, MenuItem, } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
+//import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 
 import logo from '../../assets/images/kf_logo.png'
 import logoBlk from '../../assets/images/kf_logo_Blk.png'
@@ -15,25 +17,25 @@ import MenuIcon from '@material-ui/icons/Menu'
 const headerTabs = [
   {
     label: 'Home',
-    href: '#'
+    href: '#home'
   },
   {
     label: 'About',
-    href: '#'
+    href: '#about'
   },
   {
     label: 'Portfolio',
-    href: '#'
+    href: '#projects'
   },
   {
     label: 'Contact',
-    href: '#'
+    href: '#contactme'
   },
 ]
 
 // Styles // 
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: '#000000'
   },
@@ -52,6 +54,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: 700,
     size: "18px",
     marginLeft: "38px",
+    color: 'primary'
   },
   sociolTabs: {
     color: '#fff',
@@ -72,6 +75,8 @@ const useStyles = makeStyles(() => ({
   },
   drawerItem: {
     margin: '80px',
+    color: '#666',
+    
   }
 }));
 
@@ -173,13 +178,14 @@ const Header = () => {
   const getHeaderTabs = () => {
     return headerTabs.map(({ label, href }) => {
       return (
-        <Button {...{
+        <Button color='primary' {...{
           key: label,
-          color: 'inherit',
+          color: "secondary",
           to: href,
           className: classes.menuButton
-        }}>
+        }}><Link className='link-header' smooth to={href}>
           {label}
+          </Link>
         </Button>
       )
     })

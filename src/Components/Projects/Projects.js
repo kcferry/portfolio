@@ -30,29 +30,31 @@ const Projects = () => {
     const classes = useStyles();
 
     return (
-        <Box className={classes.boxBackground}>
-            <Container className={classes.container} >
-            
-                <Typography variant="h1" align="center" color='textSecondary' gutterBottom >
-                    <Box fontWeight="fontWeightMedium">
-                        My Projects
-                    </Box>
-                </Typography>
+        <div id='projects'>
+            <Box className={classes.boxBackground}>
+                <Container className={classes.container} >
 
-                
-                    <Typography  variant="h6" align="center" color='textSecondary' gutterBottom>
+                    <Typography variant="h1" align="center" color='textSecondary' gutterBottom >
+                        <Box fontWeight="fontWeightMedium">
+                            My Projects
+                    </Box>
+                    </Typography>
+
+
+                    <Typography variant="h6" align="center" color='textSecondary' gutterBottom>
                         I like to stay busy and always have a project in the works. Take a look at some of the applications I've dedicated my time to.
                     </Typography>
-                
 
-                <Grid container spacing={6} direction='row' justify='center'>
 
-                    <PortfolioProject />
+                    <Grid container spacing={6} direction='row' justify='center'>
 
-                </Grid>
+                        <PortfolioProject />
 
-            </Container>
-        </Box>
+                    </Grid>
+
+                </Container>
+            </Box>
+        </div>
     )
 }
 

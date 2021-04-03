@@ -28,7 +28,7 @@ const Hero = () => {
     const classes = useStyles();
 
     return (
-        <>
+        <div id='home'>
             <Box fontWeight="fontWeightBold" className={classes.hero}>
                 <Grid
                     container
@@ -64,7 +64,7 @@ const Hero = () => {
                 </Grid>
 
             </Box>
-        </>
+        </div>
     )
 }
 
