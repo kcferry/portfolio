@@ -7,6 +7,7 @@ import { SiMaterialUi, SiFirebase, SiMapbox, SiLeaflet, SiRedux, SiNetlify} from
 import spacePic from '../../assets/images/SpaceClover.jpg'
 import expensePic from '../../assets/images/expensify.jpg'
 import recipePic from '../../assets/images/recipe-pic.jpg'
+import portfolioPic from '../../assets/images/portfolio-image.jpg'
 
 
 const portContent = [
@@ -33,6 +34,13 @@ const portContent = [
         livesite: 'https://adoring-yalow-21e8e7.netlify.app/index.html',
         github: 'https://github.com/kcferry/Recipe-App',
         technologies: [<FaHtml5/>, <FaCss3Alt/>, <FaJsSquare/> ]
+    },{
+        image: portfolioPic,
+        title: 'Portfolio',
+        description: 'The portfolio website is written in React.js, It is designed with a minimalist style to display information about me along with showcasing my projects and various ways to connect with me. I used Material-Ui for faster development and hosted the site using Netlify.',
+        livesite: 'https://adoring-yalow-21e8e7.netlify.app/index.html',
+        github: 'https://github.com/kcferry/Recipe-App',
+        technologies: [<FaHtml5/>, <FaSass/>, <FaJsSquare/>, <FaReact/>, <SiMaterialUi/>]
     },
 ]
 
@@ -56,13 +64,10 @@ const useStyles = makeStyles({
 
 });
 
-
 const ProjectList = () => {
     const classes = useStyles();
 
-
     return (
-
         <>
             {portContent.map((project, index) => (
                 <>
@@ -93,13 +98,9 @@ const ProjectList = () => {
                         </Card>
                     </Grid>
                 </>
-
             ))}
-
         </>
     )
-
-
 }
 
 export default ProjectList
