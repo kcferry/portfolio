@@ -68,7 +68,6 @@ const ProjectList = () => {
                 <>
                     <Grid item >
                         <Card key={index} className={classes.root}>
-                            <CardActionArea>
                                 <CardMedia
                                     className={classes.media}
                                     image={project.image}
@@ -82,7 +81,6 @@ const ProjectList = () => {
                                         {project.description}
                                     </Typography>
                                 </CardContent>
-                            </CardActionArea>
                             <CardActions>
                                 <Button variant="outlined" size="small" color="primary" href={project.livesite}>
                                     Launch Site

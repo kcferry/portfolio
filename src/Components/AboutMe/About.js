@@ -4,8 +4,8 @@ import Icon from '@material-ui/core/Icon';
 import { makeStyles } from '@material-ui/core/styles';
 import animoji from '../../assets/images/meAva.jpg'
 import AlarmIcon from '@material-ui/icons/Alarm';
-import { FaJsSquare, FaReact, FaNodeJs, FaHtml5, FaGithub, FaSass } from 'react-icons/fa'; 
-import { SiMaterialUi, SiFirebase} from 'react-icons/si';
+import { FaJsSquare, FaReact, FaNodeJs, FaHtml5, FaGithub, FaSass } from 'react-icons/fa';
+import { SiMaterialUi, SiFirebase } from 'react-icons/si';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         textAlign: 'center',
-        
+
     },
     container: {
         padding: 60
@@ -31,99 +31,106 @@ const About = () => {
 
     return (
         <div id='about'>
-        <Box className={classes.boxBackground}>
-            <Container className={classes.container} >
+            <Box className={classes.boxBackground}>
+                <Container className={classes.container} >
 
-                <Typography variant="h1" align="center" color='textSecondary' gutterBottom >
-                    <Box fontWeight="fontWeightMedium">
-                        About Me
+                    <Typography variant="h1" align="center" color='textSecondary' gutterBottom >
+                        <Box fontWeight="fontWeightMedium">
+                            About Me
                     </Box>
-                </Typography>
+                    </Typography>
 
 
-                <Grid container spacing={6} justify='space-around' alignItems='center'>
+                    <Grid container spacing={6} justify='space-around' alignItems='center'>
 
-                    <Grid container item xs={12} sm={6} spacing={6} justify='space-around' alignItems='center'>
+                        <Grid container item xs={12} sm={6} spacing={6} justify='space-around' alignItems='center'>
 
-                        <Grid item justify="center" item xs={12} sm={12}>
-                            <Typography align='center' color='textSecondary'>
-                                Hello! I'm kyle, an ambitious self-taught full stack developer from Ireland.
-                                I started my journey into web development as I found myself more
-                                often than not in my years working in sound and audio
-                                intrigued by technology and questioning what made it tick.
-                                That intrigue has become a passion to learn,
-                                understand and develop to the best of my ability.
+                            <Grid item justify="center" item xs={12} sm={12}>
+                                <Typography variant="h6" align='center' color='textSecondary'>
+
+                                    I'm kyle,  I am a driven self-taught full stack developer from Ireland.
+                                    Learning to code has been a difficult and arduous journey,
+                                    however, I have never done something so rewarding.
+                                    At this stage, I feel I am at a point where I can build multipage websites with HTML, CSS and Javascript.                            
                             </Typography>
-                        </Grid>
+                            <Typography variant="h6" align='center' color='textSecondary'>
+                                    With the knowledge that this is a fast-growing, modern industry. 
+                                    I made sure to learn and use frameworks and tools such as React, 
+                                    Material Ui and Sass making sure quality is reflected in every stage of development.                                   
+                            </Typography>
+                            <Typography variant="h6" align='center' color='textSecondary'>
+                                    I am a developer because what I learn today becomes the future of tomorrow.
+                            </Typography>
+                            </Grid>
 
 
-                        <Grid container item justify="center" xs={12} sm={12} direction='column'>
+                            <Grid container item justify="center" xs={12} sm={12} direction='column'>
 
-                            <Typography variant="h4" align="left" color='textSecondary' gutterBottom >
-                                <Box fontWeight="fontWeightMedium">
-                                    Skills
+                                <Typography variant="h4" align="left" color='textSecondary' gutterBottom >
+                                    <Box fontWeight="fontWeightMedium">
+                                        Skills
                                 </Box>
-                            </Typography>
+                                </Typography>
 
-                            <Grid container justify="center" item xs={11} sm={12} direction="row">
+                                <Grid container justify="center" item xs={11} sm={12} direction="row">
 
-                                <Grid container item xs={6} md={5}>
-                                    <Grid item >
-                                        <List> 
-                                            <ListItem >
-                                                <ListItemText><Typography color='textSecondary'><FaJsSquare />{' JavaScript (ES6+)'}</Typography></ListItemText>
-                                            </ListItem>
-                                            <Divider light />
-                                            <ListItem>
-                                                <ListItemText><Typography color='textSecondary'><FaReact />{` React`}</Typography></ListItemText>
-                                            </ListItem>
-                                            <Divider light />
-                                            <ListItem>
-                                                <ListItemText><Typography color='textSecondary'><FaNodeJs />{` Node.JS`}</Typography></ListItemText>
-                                            </ListItem>
-                                            <Divider light />
-                                            <ListItem>
-                                                <ListItemText><Typography color='textSecondary'><FaGithub/> {` Git & GitHub` } </Typography> </ListItemText>
-                                            </ListItem>
-                                            <Divider light />
-                                        </List> 
+                                    <Grid container item xs={6} md={5}>
+                                        <Grid item >
+                                            <List>
+                                                <ListItem >
+                                                    <ListItemText><Typography color='textSecondary'><FaJsSquare />{' JavaScript (ES6+)'}</Typography></ListItemText>
+                                                </ListItem>
+                                                <Divider light />
+                                                <ListItem>
+                                                    <ListItemText><Typography color='textSecondary'><FaReact />{` React`}</Typography></ListItemText>
+                                                </ListItem>
+                                                <Divider light />
+                                                <ListItem>
+                                                    <ListItemText><Typography color='textSecondary'><FaNodeJs />{` Node.JS`}</Typography></ListItemText>
+                                                </ListItem>
+                                                <Divider light />
+                                                <ListItem>
+                                                    <ListItemText><Typography color='textSecondary'><FaGithub /> {` Git & GitHub`} </Typography> </ListItemText>
+                                                </ListItem>
+                                                <Divider light />
+                                            </List>
+                                        </Grid>
                                     </Grid>
-                                </Grid>
 
-                                <Grid container item xs={6} md={5}>
-                                    <Grid item>
-                                        <List>
-                                            <ListItem>
-                                                <ListItemText><Typography color='textSecondary'><FaHtml5 /><FaSass />{` HTML5 & (S)CSS`}</Typography></ListItemText>
-                                            </ListItem>
-                                            <Divider light />
-                                            <ListItem>
-                                                <ListItemText><Typography color='textSecondary'><SiMaterialUi/>{` Material Ui`}</Typography></ListItemText>
-                                            </ListItem>
-                                            <Divider light />
-                                            <ListItem>
-                                                <ListItemText><Typography color='textSecondary'>{`</> Express`}</Typography></ListItemText>
-                                            </ListItem>
-                                            <Divider light />
-                                            <ListItem>
-                                                <ListItemText><Typography color='textSecondary'><SiFirebase/>{` Firebase` }</Typography></ListItemText>
-                                            </ListItem>
-                                            <Divider light />
-                                        </List>
+                                    <Grid container item xs={6} md={5}>
+                                        <Grid item>
+                                            <List>
+                                                <ListItem>
+                                                    <ListItemText><Typography color='textSecondary'><FaHtml5 /><FaSass />{` HTML5 & (S)CSS`}</Typography></ListItemText>
+                                                </ListItem>
+                                                <Divider light />
+                                                <ListItem>
+                                                    <ListItemText><Typography color='textSecondary'><SiMaterialUi />{` Material Ui`}</Typography></ListItemText>
+                                                </ListItem>
+                                                <Divider light />
+                                                <ListItem>
+                                                    <ListItemText><Typography color='textSecondary'>{`</> Express`}</Typography></ListItemText>
+                                                </ListItem>
+                                                <Divider light />
+                                                <ListItem>
+                                                    <ListItemText><Typography color='textSecondary'><SiFirebase />{` Firebase`}</Typography></ListItemText>
+                                                </ListItem>
+                                                <Divider light />
+                                            </List>
+                                        </Grid>
                                     </Grid>
                                 </Grid>
                             </Grid>
                         </Grid>
+
+                        <Grid container justify="center" xs={10} sm={6}>
+                            <img className='About-Img' src={animoji} alt='Kyle Amoji' align='center' />
+                        </Grid>
+
                     </Grid>
 
-                    <Grid container justify="center" xs={10} sm={6}>
-                        <img className='About-Img' src={animoji} alt='Kyle Amoji' align='center' />
-                    </Grid>
-
-                </Grid>
-
-            </Container >
-        </Box>
+                </Container >
+            </Box>
         </div>
     )
 }
