@@ -1,6 +1,5 @@
 import React from 'react'
-import { Container, Grid, Typography, Box, List, ListItemText, ListItem, Divider, Card, CardActionArea, CardActions, CardContent, CardMedia, Button } from '@material-ui/core';
-import Icon from '@material-ui/core/Icon';
+import { Container, Grid, Typography, Box} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import PortfolioProject from './ProjectList'
 
@@ -34,21 +33,28 @@ const Projects = () => {
             <Box className={classes.boxBackground}>
                 <Container className={classes.container} >
 
-                    <Typography variant="h1" align="center" color='textSecondary' gutterBottom >
-                        <Box fontWeight="fontWeightMedium">
-                            My Projects
-                    </Box>
-                    </Typography>
+                    <Grid container direction="column" justify="space-between" alignItems="center" spacing={3}>
 
+                        <Grid item>
+                            <Typography variant="h1" align="center" color='textSecondary' gutterBottom >
+                                <Box fontWeight="fontWeightMedium">
+                                    My Projects
+                                </Box>
+                            </Typography>
+                        </Grid>
 
-                    <Typography variant="h6" align="center" color='textSecondary' gutterBottom>
-                        I like to stay busy and always have a project in the works. Take a look at some of the applications I've dedicated my time to.
-                    </Typography>
+                        <Grid item>
+                            <Typography variant="h6" align="center" color='textSecondary' gutterBottom>
+                                I like to stay busy and always have a project in the works. Take a look at some of the applications I've dedicated my time to.
+                            </Typography>
+                        </Grid>
 
+                        <Grid item>
+                            <Grid container spacing={6} direction='row' justify='center'>
+                                <PortfolioProject />
+                            </Grid>
+                        </Grid>
 
-                    <Grid container spacing={6} direction='row' justify='center'>
-
-                        <PortfolioProject />
 
                     </Grid>
 

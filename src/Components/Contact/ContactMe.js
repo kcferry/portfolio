@@ -1,13 +1,8 @@
 import React from 'react'
-import { Container, Grid, Typography, Box, List, ListItemText, ListItem, Divider, Card, Paper, animoji, IconButton, CardActionArea, CardActions, CardContent, CardMedia, Button } from '@material-ui/core';
-import TextLoop from "react-text-loop";
+import { Container, Grid, Typography, Box, IconButton, } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { FaJsSquare, FaReact, FaNodeJs, FaHtml5, FaGithub, FaSass, FaCss3Alt } from 'react-icons/fa';
-import { SiMaterialUi, SiFirebase, SiMapbox, SiLeaflet, SiRedux, SiNetlify, SiMinutemailer, SiTwitter, SiLinkedin } from 'react-icons/si';
+import { SiMinutemailer, SiTwitter, SiLinkedin } from 'react-icons/si';
 
-
-import Twitter from '@material-ui/icons/Twitter';
-import LinkedIn from '@material-ui/icons/LinkedIn';
 import GitHub from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
@@ -37,7 +32,7 @@ const ContactMe = () => {
 
                     <Grid container direction="row" justify="space-between" alignItems="center" >
 
-                        <Grid item>
+                        <Grid item >
                             <Typography variant="h4" color="secondary">
                                 Let's connect!
                             </Typography>
@@ -45,7 +40,7 @@ const ContactMe = () => {
 
                         <Grid item >
 
-                            <Grid container direction="row" justify="space-between" alignItems="center">
+                            <Grid container direction="row" justify="space-between" alignItems="center" >
                                 <Grid item>
                                     <IconButton color="secondary">
                                         <a href="mailto:kyleferry@icloud.com">
@@ -72,7 +67,7 @@ const ContactMe = () => {
 
                         </Grid>
 
-                        <Grid item>
+                        <Grid item >
                             <Typography color="secondary">
                                 MADE BY KYLE FERRY © 2021
                             </Typography>

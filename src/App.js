@@ -4,7 +4,6 @@ import About from './Components/AboutMe/About'
 import Layout from './Components/Layout';
 import Projects from './Components/Projects/Projects'
 import ContactMe from './Components/Contact/ContactMe'
-import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom'
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
@@ -55,17 +54,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
 
-      
-
         <Layout>
          <Hero/>
          <About/>
          <Projects/>
          <ContactMe/>  
         </Layout>
-
-
-     
 
     </ThemeProvider>
   );

@@ -1,9 +1,7 @@
 import React from 'react'
-import { Container, Grid, Typography, Paper, Box, List, ListItemText, ListItem, Divider } from '@material-ui/core';
-import Icon from '@material-ui/core/Icon';
+import { Container, Grid, Typography, Box, List, ListItemText, ListItem, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import animoji from '../../assets/images/meAva.jpg'
-import AlarmIcon from '@material-ui/icons/Alarm';
 import { FaJsSquare, FaReact, FaNodeJs, FaHtml5, FaGithub, FaSass } from 'react-icons/fa';
 import { SiMaterialUi, SiFirebase } from 'react-icons/si';
 

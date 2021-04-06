@@ -1,13 +1,13 @@
 import React from 'react'
 import { Grid, Typography, Card, CardActions, CardContent, CardMedia, Button,  } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { FaJsSquare, FaReact, FaHtml5, FaSass, FaCss3Alt } from 'react-icons/fa'; 
+import { SiMaterialUi, SiFirebase, SiMapbox, SiLeaflet, SiRedux, SiNetlify} from 'react-icons/si';
 
 import spacePic from '../../assets/images/SpaceClover.jpg'
 import expensePic from '../../assets/images/expensify.jpg'
 import recipePic from '../../assets/images/recipe-pic.jpg'
 
-import { FaJsSquare, FaReact, FaNodeJs, FaHtml5, FaGithub, FaSass, FaCss3Alt } from 'react-icons/fa'; 
-import { SiMaterialUi, SiFirebase, SiMapbox, SiLeaflet, SiRedux, SiNetlify} from 'react-icons/si';
 
 const portContent = [
     {

@@ -6,8 +6,6 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './theme'
 import {BrowserRouter as Router} from 'react-router-dom'
 
-
-
 ReactDOM.render(
   <Router>
   <React.StrictMode>

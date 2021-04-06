@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, IconButton, Drawer, MenuItem, } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
-//import { Link } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link';
 
 import logo from '../../assets/images/kf_logo.png'
@@ -81,11 +80,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-
-
-
-
-
 const Header = () => {
 
   const classes = useStyles();
@@ -107,8 +101,6 @@ const Header = () => {
     window.addEventListener('resize', () => setResponsiveness())
   }, [])
 
-
-
   const kfLogo = (
     <Button>
       <img src={logo} alt="Kyle Ferry logo" className={classes.logo} />
@@ -123,8 +115,6 @@ const Header = () => {
     </div>
   )
 
-
-  
   const displayDesktop = () => {
     return <Toolbar className={classes.Toolbar}>
       <div>
@@ -176,7 +166,6 @@ const Header = () => {
         </IconButton>
 
 
-
         <Drawer
           {...{
             anchor: "left",
@@ -190,13 +179,10 @@ const Header = () => {
           <div className={classes.drawerContainer}>{socialLinks}</div>
         </Drawer>
 
-
       </Toolbar>
     )
 
   }
-
-
 
   const getHeaderTabs = () => {
     return headerTabs.map(({ label, href }) => {
@@ -214,7 +200,6 @@ const Header = () => {
     })
   }
 
-  
   const socialLinks = (
     <div>
       <IconButton href='https://github.com/kcferry'>
