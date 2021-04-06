@@ -28,7 +28,7 @@ const headerTabs = [
     href: '#projects'
   },
   {
-    label: 'Contact',
+    label: 'Connect',
     href: '#contactme'
   },
 ]
@@ -215,7 +215,6 @@ const Header = () => {
   }
 
   
-
   const socialLinks = (
     <div>
       <IconButton href='https://github.com/kcferry'>

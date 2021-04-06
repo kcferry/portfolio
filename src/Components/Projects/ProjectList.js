@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, Card, CardActionArea, CardActions, CardContent, CardMedia, Button,  } from '@material-ui/core';
+import { Grid, Typography, Card, CardActions, CardContent, CardMedia, Button,  } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import spacePic from '../../assets/images/SpaceClover.jpg'
@@ -83,10 +83,10 @@ const ProjectList = () => {
                                 </CardContent>
                             <CardActions>
                                 <Button variant="outlined" size="small" color="primary" href={project.livesite}>
-                                    Launch Site
+                                    See Live
                                 </Button>
                                 <Button variant="outlined" size="small" color="primary" href={project.github}>
-                                    GitHub
+                                    Source Code
                                 </Button> 
                                 {project.technologies}
                             </CardActions>
