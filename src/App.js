@@ -7,24 +7,6 @@ import ContactMe from './Components/Contact/ContactMe'
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
-const routes = [
-  {
-    path: '/home',
-    comp: Hero
-  },
-  {
-    path: '/about',
-    comp: About
-  },
-  {
-    path: '/projects',
-    comp: Projects
-  },
-  {
-    path: '/contactme',
-    comp: ContactMe
-  },
-]
 
 const theme = createMuiTheme({
   palette: {

@@ -43,22 +43,31 @@ const About = () => {
 
                         <Grid container item xs={12} sm={6} spacing={6} justify='space-around' alignItems='center'>
 
-                            <Grid item justify="center" item xs={12} sm={12}>
-                                <Typography variant="h6" align='center' color='textSecondary'>
+                            <Grid item justify="center" >
 
-                                    I'm kyle,  I am a driven self-taught full stack developer from Ireland.
-                                    Learning to code has been a difficult and arduous journey,
-                                    however, I have never done something so rewarding.
-                                    At this stage, I feel I am at a point where I can build multipage websites with HTML, CSS and Javascript.                            
-                            </Typography>
-                            <Typography variant="h6" align='center' color='textSecondary'>
-                                    With the knowledge that this is a fast-growing, modern industry. 
-                                    I made sure to learn and use frameworks and tools such as React, 
-                                    Material Ui and Sass making sure quality is reflected in every stage of development.                                   
-                            </Typography>
-                            <Typography variant="h6" align='center' color='textSecondary'>
-                                    I am a developer because what I learn today becomes the future of tomorrow.
-                            </Typography>
+                                <Grid item>
+                                    <Typography variant="h6" align='center' color='textSecondary'>
+                                        I'm kyle,  I am a driven self-taught full stack developer from Ireland.
+                                        Learning to code has been a difficult and arduous journey,
+                                        however, I have never done something so rewarding.
+                                        At this stage, I feel I am at a point where I can build multipage websites with HTML, CSS and Javascript.
+                                </Typography>
+                                </Grid>
+
+                                <Grid item>
+                                    <Typography variant="h6" align='center' color='textSecondary'>
+                                        With the knowledge that this is a fast-growing, modern industry.
+                                        I made sure to learn and use frameworks and tools such as React,
+                                        Material Ui and Sass making sure quality is reflected in every stage of development.
+                                </Typography>
+                                </Grid>
+
+                                <Grid item>
+                                    <Typography variant="h6" align='center' color='textSecondary'>
+                                        I am a developer because what I learn today becomes the future of tomorrow.
+                                </Typography>
+                                </Grid>
+
                             </Grid>
 
 
@@ -67,7 +76,7 @@ const About = () => {
                                 <Typography variant="h4" align="left" color='textSecondary' gutterBottom >
                                     <Box fontWeight="fontWeightMedium">
                                         Skills
-                                </Box>
+                                    </Box>
                                 </Typography>
 
                                 <Grid container justify="center" item xs={11} sm={12} direction="row">
