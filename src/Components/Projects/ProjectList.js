@@ -69,26 +69,27 @@ const ProjectList = () => {
         <>
             {portContent.map((project, index) => (
                 <>
-                    <Grid item >
-                        <Card key={index} className={classes.root}>
-                                <CardMedia
+                    <Grid item key={index}>
+                        <Card key={project.image} className={classes.root}>
+                                <CardMedia 
+                                    key={project.image}
                                     className={classes.media}
                                     image={project.image}
                                     title={project.title}
                                 />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
+                                <CardContent key={project.title}>
+                                    <Typography key={project.title} gutterBottom variant="h5" component="h2">
                                         {project.title}
                                     </Typography>
-                                    <Typography variant="body2" color="textPrimary" component="p">
+                                    <Typography key={project.description} variant="body2" color="textPrimary" component="p">
                                         {project.description}
                                     </Typography>
                                 </CardContent>
                             <CardActions>
-                                <Button variant="outlined" size="small" color="primary" href={project.livesite}>
+                                <Button key={project.livesite} variant="outlined" size="small" color="primary" href={project.livesite}>
                                     See Live
                                 </Button>
-                                <Button variant="outlined" size="small" color="primary" href={project.github}>
+                                <Button key={project.github} variant="outlined" size="small" color="primary" href={project.github}>
                                     Source Code
                                 </Button> 
                                 {project.technologies}

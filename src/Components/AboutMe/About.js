@@ -104,7 +104,7 @@ const About = () => {
                                                             </ListItem>
                                                             <Divider light />
                                                             <ListItem>
-                                                                <ListItemText><Typography color='textSecondary'><FaNodeJs />{` Node.JS`}</Typography></ListItemText>
+                                                                <ListItemText><Typography color='textSecondary'><FaNodeJs />{` Node.JS (Currently Learning)`}</Typography></ListItemText>
                                                             </ListItem>
                                                             <Divider light />
                                                             <ListItem>
@@ -130,7 +130,7 @@ const About = () => {
                                                             </ListItem>
                                                             <Divider light />
                                                             <ListItem>
-                                                                <ListItemText><Typography color='textSecondary'>{`</> Express`}</Typography></ListItemText>
+                                                                <ListItemText><Typography color='textSecondary'>{`</> Express (Currently Learning)`}</Typography></ListItemText>
                                                             </ListItem>
                                                             <Divider light />
                                                             <ListItem>
