@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
         color: '#1fe628',
         className: 'toto'
     },
-
 }));
 
 const Hero = () => {
