@@ -1,4 +1,6 @@
 import './styles/styles.scss'
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga';
 import Hero from './Hero'
 import About from './Components/AboutMe/About'
 import Layout from './Components/Layout';
@@ -6,6 +8,8 @@ import Projects from './Components/Projects/Projects'
 import ContactMe from './Components/Contact/ContactMe'
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+
+
 
 
 const theme = createMuiTheme({
@@ -32,6 +36,12 @@ const theme = createMuiTheme({
 
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('UA-197092511-1')
+  
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
 
   return (
     <ThemeProvider theme={theme}>
