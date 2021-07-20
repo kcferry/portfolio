@@ -1,11 +1,12 @@
 import './styles/styles.scss'
 import React, { useEffect } from 'react'
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga'; //Google Analitics
 import Hero from './Hero'
 import About from './Components/AboutMe/About'
 import Layout from './Components/Layout';
 import Projects from './Components/Projects/Projects'
 import ContactMe from './Components/Contact/ContactMe'
+
 
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
@@ -43,18 +44,23 @@ function App() {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
 
+
+
   return (
 
-    <ThemeProvider theme={theme}>
+    <>
+      <ThemeProvider theme={theme}>
 
-      <Layout>
-        <Hero />
-        <About />
-        <Projects />
-        <ContactMe />
-      </Layout>
+        <Layout>
+          <Hero />
+          <About />
+          <Projects />
+          <ContactMe />
+        </Layout>
 
-    </ThemeProvider>
+      </ThemeProvider>
+
+    </>
   );
 }
 
